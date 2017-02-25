@@ -33,249 +33,25 @@ body {
     background-color: #f4f4f4;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-    display: block;
-}
-
-audio,
-canvas,
-progress,
-video {
-    display: inline-block;
-    vertical-align: baseline;
-}
-
-audio:not([controls]) {
-    display: none;
-    height: 0;
-}
-
-[hidden],
-template {
-    display: none;
-}
-
 a {
     color: inherit;
     text-decoration: none;
     background-color: transparent;
 }
 
-a:active,
-a:hover {
-    outline: 0;
-}
-
-abbr[title] {
-    border-bottom: 1px dotted;
-}
-
-b,
-strong {
-    font-weight: bold;
-}
-
-dfn {
-    font-style: italic;
-}
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
-mark {
-    background: #ff0;
-    color: #000;
-}
-
-small {
-    font-size: 80%;
-}
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sup {
-    top: -0.5em;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-img {
-    max-width: 100%;
-    border: 0;
-    vertical-align: middle;
-}
-
-svg:not(:root) {
-    overflow: hidden;
-}
-
-figure {
-    margin: 1em 40px;
-}
-
-hr {
-    box-sizing: content-box;
-    height: 0;
-}
-
-pre {
-    overflow: auto;
-}
-
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, monospace;
-    font-size: 1em;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
-}
-
-button {
-    overflow: visible;
-}
-
-button,
-select {
-    text-transform: none;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
-}
-
-button[disabled],
-html input[disabled] {
-    cursor: default;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-input {
-    line-height: normal;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-}
-
-input[type="search"] {
-    -webkit-appearance: textfield;
-    box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-
-fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-    border: 0;
-    padding: 0;
-}
-
-textarea {
-    overflow: auto;
-    vertical-align: top;
-    resize: vertical;
-}
-
-optgroup {
-    font-weight: bold;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-td,
-th {
-    padding: 0;
-}
-
-/* 全局设置 */
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-*:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-p, dl, dt, dd {
-    margin: 0;
-    padding: 0;
-}
-
-ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.flex {
+    display: inline-flex;
 }
 
 /*! 通用类.以cm开头 把通用class和业务class进行区分 */
-.cm-container-fluid {
-    /*width: 100%;*/
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
-
+.cm-height {
     height: 100%;
+}
+
+.cm-container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .cm-container-fluid::after {
@@ -290,21 +66,6 @@ ul, li {
     margin-left: auto;
     padding-left: 10px;
     padding-right: 10px;
-    height: 100%;
-}
-
-.cm-side{
-    float: left;
-    width: 20%;
-    height: 100%;
-    background: greenyellow;
-}
-
-.cm-cont{
-    float: left;
-width: 80%;
-    height: 100%;
-    background: gray;
 }
 
 .cm-container::after {
@@ -313,11 +74,71 @@ width: 80%;
     clear: both;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: "";
+.cm-top {
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #333;
+}
+
+.cm-top-left {
+    float: left;
+}
+
+.cm-top-right {
+    float: right;
+}
+
+.cm-login-in {
     display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+}
+
+.cm-login-in,
+.cm-download-app {
+    float: left;
+}
+
+.cm-login-in a,
+.cm-download-app a {
+    padding: 0 5px;
+    opacity: .7;
+}
+
+.i-app {
+    color: #fff;
+    padding-right: 4px;
+}
+
+.cm-login-in a:hover,
+.cm-download-app a:hover,
+.cm-download-app .i-app:hover {
+    opacity: 1;
+}
+
+.cm-split {
+    float: left;
+    display: block;
+    width: 1px;
+    height: 12px;
+    margin: 12px 10px;
+    padding: 0;
+    background: #ddd;
+    overflow: hidden;
+}
+
+/*登录后显示*/
+.cm-user {
+    display: block;
+    float: left;
+}
+
+.cm-side {
+    width: 17%;
+    background-color: #63a35c;
+
+}
+
+.cm-cont {
+    width: 83%;
 }
