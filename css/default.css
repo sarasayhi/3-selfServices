@@ -33,6 +33,12 @@ body {
     background-color: #f4f4f4;
 }
 
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -40,14 +46,20 @@ a {
 }
 
 .flex {
+    width: 100%;
     display: inline-flex;
 }
 
-/*! 通用类.以cm开头 把通用class和业务class进行区分 */
-.cm-height {
-    height: 100%;
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    color: #78885b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+/*! 通用类.以cm开头 把通用class和业务class进行区分 */
 .cm-container-fluid {
     width: 100%;
     margin-right: auto;
@@ -134,11 +146,15 @@ a {
 }
 
 .cm-side {
-    width: 17%;
-    background-color: #63a35c;
-
+    width: 220px;
+    min-height: 500px;
+    overflow: scroll;
 }
 
 .cm-cont {
-    width: 83%;
+    width: 100%;
+    min-width: 1100px;
+    min-height: 500px;
+    padding: 0 20px;
+    overflow: scroll;
 }

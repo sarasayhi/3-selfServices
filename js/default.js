@@ -9,3 +9,13 @@
  * date     : 2017/2/1
  * modify   :
  */
+$(document).ready(function () {
+    var height = $(window).height() - 36;
+    console.log(height);
+    $('.cm-side').height(height);
+    $('.cm-cont').height(height);
+
+    if ($.isFunction(window.pageInit)) {
+        pageInit();
+    }
+});

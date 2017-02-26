@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <title></title>
+
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/order_submit.css">
+</head>
+<body>
+<!--顶部栏-->
+<div class="cm-top">
+    <div class="cm-container">
+        <a class="cm-top-left" href="goods_list.html">
+            <i class="iconfont">&#xe6ca;</i>
+            SaSaの自助结算
+        </a>
+        <div class="cm-top-right">
+            <div class="cm-login-in">
+                <a href="login.html?to=login">登录</a>
+                <a href="login.html?to=register">注册</a>
+            </div>
+            <!--登录之后显示-->
+            <a href="person.html" class="cm-user">
+                端木瑾
+            </a>
+            <span class="cm-split"></span>
+            <div class="cm-download-app">
+                <a href="login.html">
+                    <i class="iconfont i-app">&#xe608;</i>
+                    下载app
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cm-container">
+    <!--订单列表-->
+    <div class="order-list">
+        <ul class="od-list">
+            <li class="od-goods-info od-goods-bold">商品信息</li>
+            <li></li>
+            <li>规格</li>
+            <li>单价</li>
+            <li>数量</li>
+            <li>小计</li>
+        </ul>
+        <div class="od-content">
+            <ul class="od-list od-cn-list">
+                <li class="od-goods-img"><img src="//t-source.3pzs.com/goods/org/101/11454/1480075720.jpg"></li>
+                <li class="od-goods-info">紫甘蓝</li>
+                <li>两斤1个</li>
+                <li>￥5.33</li>
+                <li>1</li>
+                <li>￥5.33</li>
+            </ul>
+            <ul class="od-list od-cn-list">
+                <li class="od-goods-img"><img src="//t-source.3pzs.com/goods/org/101/11454/1480075720.jpg"></li>
+                <li class="od-goods-info">紫甘蓝</li>
+                <li>两斤1个</li>
+                <li>￥5.33</li>
+                <li>1</li>
+                <li>￥5.33</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!--支付区域-->
+    <div class="od-pay-area">
+        <div class="od-pay-info">
+            <div class="od-pay-list">
+                <p class="od-line1">
+                    <span class="od-amount-piece">共<em id="goods_amount">0</em>件</span>
+                    <label>总计：</label>
+                    <span class="od-pay-num" id="goods_total">￥0</span>
+                </p>
+                <p class="od-line4">
+                    <label>应付：</label>
+                    <span class="od-pay-num od-should-pay">￥0</span>
+                </p>
+            </div>
+        </div>
+        <div class="od-pay-btn">
+            <a href="javascript:void(0)" class="ct-pay-btn">去支付</a>
+            <a href="goods_list.html" class="ct-pay-btn">返回选购</a>
+            <p style="font-size: 16px;font-weight: bolder">目前只支持支付宝付款</p>
+        </div>
+    </div>
+
+    <!--遮罩层-->
+    <div class="cm-shade">
+        <!-- 微信支付二维码弹窗 -->
+        <div class="wechat-pay-code">
+            <h3 class="wechat-pay-title">微信支付</h3>
+            <i class="iconfont i-close-btn">&#xe60b;</i>
+            <div class="wechat-pay-info">
+                <img id="wechat-code" src=''/>
+                <div>打开手机微信<br/>扫一扫完成付款</div>
+                <img id="wechat-tip-img" src="img/test/wechat-img.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/vendor/jquery-3.1.1.js"></script>
+<script src="js/default.js"></script>
+</body>
+</html>
