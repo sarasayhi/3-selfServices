@@ -1,0 +1,173 @@
+{
+  "ans": "ok",
+  "data": [
+    {
+      "goods_class_sid": "101",
+      "goods_class_name": "蔬菜",
+      "details": [
+        {
+          "goods_class_sid": "101101",
+          "goods_class_name": "叶菜"
+        },
+        {
+          "goods_class_sid": "101102",
+          "goods_class_name": "菇类"
+        },
+        {
+          "goods_class_sid": "101103",
+          "goods_class_name": "根茎瓜类"
+        },
+        {
+          "goods_class_sid": "101104",
+          "goods_class_name": "姜葱香料"
+        },
+        {
+          "goods_class_sid": "101105",
+          "goods_class_name": "腌制菜"
+        },
+        {
+          "goods_class_sid": "101106",
+          "goods_class_name": "其他蔬菜"
+        }
+      ]
+    },
+    {
+      "goods_class_sid": "102",
+      "goods_class_name": "肉禽蛋品",
+      "details": [
+        {
+          "goods_class_sid": "102101",
+          "goods_class_name": "猪肉"
+        },
+        {
+          "goods_class_sid": "102102",
+          "goods_class_name": "冰冻猪肉"
+        },
+        {
+          "goods_class_sid": "102103",
+          "goods_class_name": "鸡肉"
+        },
+        {
+          "goods_class_sid": "102104",
+          "goods_class_name": "牛肉"
+        },
+        {
+          "goods_class_sid": "102105",
+          "goods_class_name": "鸭肉"
+        },
+        {
+          "goods_class_sid": "102106",
+          "goods_class_name": "羊肉"
+        },
+        {
+          "goods_class_sid": "102107",
+          "goods_class_name": "蛋类"
+        },
+        {
+          "goods_class_sid": "102108",
+          "goods_class_name": "其他肉"
+        },
+        {
+          "goods_class_sid": "102109",
+          "goods_class_name": "腌制肉类"
+        }
+      ]
+    },
+    {
+      "goods_class_sid": "103",
+      "goods_class_name": "海产",
+      "details": [
+        {
+          "goods_class_sid": "103101",
+          "goods_class_name": "鱼类"
+        },
+        {
+          "goods_class_sid": "103102",
+          "goods_class_name": "鱼部位"
+        },
+        {
+          "goods_class_sid": "103103",
+          "goods_class_name": "贝类"
+        },
+        {
+          "goods_class_sid": "103104",
+          "goods_class_name": "蟹类"
+        },
+        {
+          "goods_class_sid": "103105",
+          "goods_class_name": "虾类"
+        },
+        {
+          "goods_class_sid": "103106",
+          "goods_class_name": "其他海产"
+        }
+      ]
+    },
+    {
+      "goods_class_sid": "104",
+      "goods_class_name": "副食粮油",
+      "details": [
+        {
+          "goods_class_sid": "104101",
+          "goods_class_name": "食用油"
+        },
+        {
+          "goods_class_sid": "104102",
+          "goods_class_name": "大米"
+        },
+        {
+          "goods_class_sid": "104103",
+          "goods_class_name": "杂粮"
+        },
+        {
+          "goods_class_sid": "104104",
+          "goods_class_name": "面类粉类"
+        },
+        {
+          "goods_class_sid": "104105",
+          "goods_class_name": "调料"
+        }
+      ]
+    },
+    {
+      "goods_class_sid": "105",
+      "goods_class_name": "干货",
+      "details": {}
+    },
+    {
+      "goods_class_sid": "106",
+      "goods_class_name": "水果",
+      "details": {}
+    },
+    {
+      "goods_class_sid": "107",
+      "goods_class_name": "其他",
+      "details": [
+        {
+          "goods_class_sid": "107101",
+          "goods_class_name": "豆制品"
+        },
+        {
+          "goods_class_sid": "107102",
+          "goods_class_name": "卤水"
+        },
+        {
+          "goods_class_sid": "107103",
+          "goods_class_name": "烧腊"
+        },
+        {
+          "goods_class_sid": "107104",
+          "goods_class_name": "丸子"
+        },
+        {
+          "goods_class_sid": "107105",
+          "goods_class_name": "加工肉类"
+        },
+        {
+          "goods_class_sid": "107106",
+          "goods_class_name": "其他食品"
+        }
+      ]
+    }
+  ]
+}
